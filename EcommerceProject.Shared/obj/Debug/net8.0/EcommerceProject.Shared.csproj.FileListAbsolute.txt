@@ -1,0 +1,11 @@
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Shared\bin\Debug\net8.0\EcommerceProject.Shared.deps.json
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Shared\bin\Debug\net8.0\EcommerceProject.Shared.dll
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Shared\bin\Debug\net8.0\EcommerceProject.Shared.pdb
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Shared\obj\Debug\net8.0\EcommerceProject.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Shared\obj\Debug\net8.0\EcommerceProject.Shared.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Shared\obj\Debug\net8.0\EcommerceProject.Shared.AssemblyInfo.cs
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Shared\obj\Debug\net8.0\EcommerceProject.Shared.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Shared\obj\Debug\net8.0\EcommerceProject.Shared.dll
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Shared\obj\Debug\net8.0\refint\EcommerceProject.Shared.dll
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Shared\obj\Debug\net8.0\EcommerceProject.Shared.pdb
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Shared\obj\Debug\net8.0\ref\EcommerceProject.Shared.dll

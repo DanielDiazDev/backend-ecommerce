@@ -1,0 +1,17 @@
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\bin\Debug\net8.0\EcommerceProject.Data.deps.json
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\bin\Debug\net8.0\EcommerceProject.Data.runtimeconfig.json
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\bin\Debug\net8.0\EcommerceProject.Data.dll
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\bin\Debug\net8.0\EcommerceProject.Data.pdb
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\bin\Debug\net8.0\EcommerceProject.Model.dll
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\bin\Debug\net8.0\EcommerceProject.Model.pdb
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\obj\Debug\net8.0\EcommerceProject.Data.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\obj\Debug\net8.0\EcommerceProject.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\obj\Debug\net8.0\EcommerceProject.Data.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\obj\Debug\net8.0\EcommerceProject.Data.AssemblyInfo.cs
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\obj\Debug\net8.0\EcommerceProject.Data.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\obj\Debug\net8.0\EcommerceProject.Data.csproj.CopyComplete
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\obj\Debug\net8.0\EcommerceProject.Data.dll
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\obj\Debug\net8.0\refint\EcommerceProject.Data.dll
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\obj\Debug\net8.0\EcommerceProject.Data.pdb
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\obj\Debug\net8.0\EcommerceProject.Data.genruntimeconfig.cache
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\obj\Debug\net8.0\ref\EcommerceProject.Data.dll
