@@ -16,6 +16,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddAuthorization();
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JWT"));
 var jwtSettings = builder.Configuration.GetSection("JWT").Get<JwtSettings>();
+builder.Services.Configure<MercadoPagoSettings>(builder.Configuration.GetSection("MercadoPago"));
+//var mercadoPagoSettings = builder.Configuration.GetSection("MercadoPago").Get<MercadoPagoSettings>();
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -48,6 +50,8 @@ if (app.Environment.IsDevelopment())
 app.AddAuthEndpoints();
 app.AddUserEndpoints();
 app.AddProductEndpoints();
+app.AddCartEndpoints();
+app.AddOrderEndpoints();
 
 app.UseHttpsRedirection();
 app.UseAuthentication();

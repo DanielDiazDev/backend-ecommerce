@@ -10,3 +10,4 @@ C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Model\ob
 C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Model\obj\Debug\net8.0\refint\EcommerceProject.Model.dll
 C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Model\obj\Debug\net8.0\EcommerceProject.Model.pdb
 C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Model\obj\Debug\net8.0\ref\EcommerceProject.Model.dll
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Model\obj\Debug\net8.0\EcommerceProject.Model.sourcelink.json

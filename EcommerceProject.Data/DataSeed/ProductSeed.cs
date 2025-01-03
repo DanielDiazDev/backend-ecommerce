@@ -13,7 +13,7 @@ public class ProductSeed : IEntityTypeConfiguration<Product>
             builder.HasData(
                 new Product
                 {
-                    Id = Guid.NewGuid(),
+                    Id = Guid.Parse("1915fbc6-5330-447c-820d-e03c2cb71297"),
                     Name = "Smartphone",
                     Description = "High-end smartphone with OLED display",
                     Price = 699.99m,
@@ -22,7 +22,7 @@ public class ProductSeed : IEntityTypeConfiguration<Product>
                 },
                 new Product
                 {
-                    Id = Guid.NewGuid(),
+                    Id = Guid.Parse("01af9b3e-ae80-4c36-91c2-f25f5ae94201"),
                     Name = "Laptop",
                     Description = "Powerful laptop for gaming and work",
                     Price = 1199.99m,
@@ -31,7 +31,7 @@ public class ProductSeed : IEntityTypeConfiguration<Product>
                 },
                 new Product
                 {
-                    Id = Guid.NewGuid(),
+                    Id = Guid.Parse("ed736b64-3bc9-4cb9-9a94-1bf926ccd276"),
                     Name = "T-Shirt",
                     Description = "Comfortable cotton T-shirt",
                     Price = 19.99m,
@@ -40,7 +40,7 @@ public class ProductSeed : IEntityTypeConfiguration<Product>
                 },
                 new Product
                 {
-                    Id = Guid.NewGuid(),
+                    Id = Guid.Parse("c7e86012-08e8-4da6-b864-1137d497aafa"),
                     Name = "Jeans",
                     Description = "Stylish denim jeans",
                     Price = 49.99m,

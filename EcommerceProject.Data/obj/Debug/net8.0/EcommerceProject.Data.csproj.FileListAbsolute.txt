@@ -15,3 +15,6 @@ C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\obj
 C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\obj\Debug\net8.0\EcommerceProject.Data.pdb
 C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\obj\Debug\net8.0\EcommerceProject.Data.genruntimeconfig.cache
 C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\obj\Debug\net8.0\ref\EcommerceProject.Data.dll
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\obj\Debug\net8.0\EcommerceProject.Data.sourcelink.json
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\bin\Debug\net8.0\EcommerceProject.Shared.dll
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Data\bin\Debug\net8.0\EcommerceProject.Shared.pdb

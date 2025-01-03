@@ -9,3 +9,5 @@ C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Shared\o
 C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Shared\obj\Debug\net8.0\refint\EcommerceProject.Shared.dll
 C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Shared\obj\Debug\net8.0\EcommerceProject.Shared.pdb
 C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Shared\obj\Debug\net8.0\ref\EcommerceProject.Shared.dll
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Shared\obj\Debug\net8.0\EcommerceProject.Shared.sourcelink.json
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Shared\obj\Debug\net8.0\EcommerceProject.Shared.csproj.AssemblyReference.cache

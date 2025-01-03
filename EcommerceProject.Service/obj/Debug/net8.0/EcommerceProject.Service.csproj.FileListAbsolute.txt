@@ -17,3 +17,4 @@ C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Service\
 C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Service\obj\Debug\net8.0\ref\EcommerceProject.Service.dll
 C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Service\bin\Debug\net8.0\EcommerceProject.Shared.dll
 C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Service\bin\Debug\net8.0\EcommerceProject.Shared.pdb
+C:\Users\User\Desktop\Practica CSharp\EcommerceProject\EcommerceProject.Service\obj\Debug\net8.0\EcommerceProject.Service.sourcelink.json

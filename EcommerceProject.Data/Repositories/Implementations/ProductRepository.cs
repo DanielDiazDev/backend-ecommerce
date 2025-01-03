@@ -18,4 +18,14 @@ public class ProductRepository : IProductRepository
         await _context.SaveChangesAsync();
         return true;
     }
+
+    public IQueryable<Product> GetAll()
+    {
+        return _context.Products.AsQueryable();
+    }
+
+    public async Task<Product> Get(Guid id)
+    {
+        return await _context.Products.FindAsync(id);
+    }
 }

@@ -22,37 +22,6 @@ namespace EcommerceProject.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("EcommerceProject.Model.Cart", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("ModifiedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid>("ProductId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Carts");
-                });
-
             modelBuilder.Entity("EcommerceProject.Model.Category", b =>
                 {
                     b.Property<Guid>("Id")
@@ -87,6 +56,59 @@ namespace EcommerceProject.Data.Migrations
                             Description = "Clothing category",
                             Name = "Clothing"
                         });
+                });
+
+            modelBuilder.Entity("EcommerceProject.Model.Order", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("PaymentStatus")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Total")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("EcommerceProject.Model.OrderDetail", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("OrderId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<Guid>("ProductId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("OrderDetails");
                 });
 
             modelBuilder.Entity("EcommerceProject.Model.Product", b =>
@@ -130,44 +152,44 @@ namespace EcommerceProject.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("e75f87a5-c8f5-4658-9ed1-4b0c623eb251"),
+                            Id = new Guid("1915fbc6-5330-447c-820d-e03c2cb71297"),
                             CategoryId = new Guid("6f1392c0-bf53-4e79-b20f-d019f0c257ad"),
-                            CreatedDate = new DateTime(2024, 12, 30, 23, 4, 38, 632, DateTimeKind.Local).AddTicks(3945),
+                            CreatedDate = new DateTime(2025, 1, 3, 10, 15, 27, 171, DateTimeKind.Local).AddTicks(9202),
                             Description = "High-end smartphone with OLED display",
-                            ModifiedDate = new DateTime(2024, 12, 30, 23, 4, 38, 632, DateTimeKind.Local).AddTicks(3962),
+                            ModifiedDate = new DateTime(2025, 1, 3, 10, 15, 27, 171, DateTimeKind.Local).AddTicks(9222),
                             Name = "Smartphone",
                             Price = 699.99m,
                             Stock = 50
                         },
                         new
                         {
-                            Id = new Guid("4165da1e-8199-49ed-9e52-a35444bfbaeb"),
+                            Id = new Guid("01af9b3e-ae80-4c36-91c2-f25f5ae94201"),
                             CategoryId = new Guid("6f1392c0-bf53-4e79-b20f-d019f0c257ad"),
-                            CreatedDate = new DateTime(2024, 12, 30, 23, 4, 38, 632, DateTimeKind.Local).AddTicks(4005),
+                            CreatedDate = new DateTime(2025, 1, 3, 10, 15, 27, 171, DateTimeKind.Local).AddTicks(9256),
                             Description = "Powerful laptop for gaming and work",
-                            ModifiedDate = new DateTime(2024, 12, 30, 23, 4, 38, 632, DateTimeKind.Local).AddTicks(4005),
+                            ModifiedDate = new DateTime(2025, 1, 3, 10, 15, 27, 171, DateTimeKind.Local).AddTicks(9257),
                             Name = "Laptop",
                             Price = 1199.99m,
                             Stock = 30
                         },
                         new
                         {
-                            Id = new Guid("5c3d96a1-0c3a-4990-bc2c-5c24c59003e7"),
+                            Id = new Guid("ed736b64-3bc9-4cb9-9a94-1bf926ccd276"),
                             CategoryId = new Guid("f97f6d3d-60f3-4886-9cae-e2eb3e5c43c8"),
-                            CreatedDate = new DateTime(2024, 12, 30, 23, 4, 38, 632, DateTimeKind.Local).AddTicks(4011),
+                            CreatedDate = new DateTime(2025, 1, 3, 10, 15, 27, 171, DateTimeKind.Local).AddTicks(9261),
                             Description = "Comfortable cotton T-shirt",
-                            ModifiedDate = new DateTime(2024, 12, 30, 23, 4, 38, 632, DateTimeKind.Local).AddTicks(4011),
+                            ModifiedDate = new DateTime(2025, 1, 3, 10, 15, 27, 171, DateTimeKind.Local).AddTicks(9262),
                             Name = "T-Shirt",
                             Price = 19.99m,
                             Stock = 200
                         },
                         new
                         {
-                            Id = new Guid("e0de7dd7-25b6-4666-a65d-cbf85871a411"),
+                            Id = new Guid("c7e86012-08e8-4da6-b864-1137d497aafa"),
                             CategoryId = new Guid("f97f6d3d-60f3-4886-9cae-e2eb3e5c43c8"),
-                            CreatedDate = new DateTime(2024, 12, 30, 23, 4, 38, 632, DateTimeKind.Local).AddTicks(4016),
+                            CreatedDate = new DateTime(2025, 1, 3, 10, 15, 27, 171, DateTimeKind.Local).AddTicks(9265),
                             Description = "Stylish denim jeans",
-                            ModifiedDate = new DateTime(2024, 12, 30, 23, 4, 38, 632, DateTimeKind.Local).AddTicks(4016),
+                            ModifiedDate = new DateTime(2025, 1, 3, 10, 15, 27, 171, DateTimeKind.Local).AddTicks(9266),
                             Name = "Jeans",
                             Price = 49.99m,
                             Stock = 100
@@ -231,13 +253,13 @@ namespace EcommerceProject.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "c8460c75-e567-4f35-bfca-d5557445d345",
+                            Id = "cb9de386-b9ef-4fd5-bc33-8b6691deaf30",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "bd1e463b-a365-45d5-b7b9-6539aa2d081a",
+                            Id = "ccc173cf-e04e-4fa2-ab43-692b8dbf1199",
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -432,38 +454,49 @@ namespace EcommerceProject.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "b1c0c79d-c00b-4cb8-a2fb-88a712e7db86",
+                            Id = "e11a7edf-fdd2-4337-b08c-6ac840c150ff",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "d3874b1f-9806-4a5f-98f0-b917f1e67112",
+                            ConcurrencyStamp = "c3cbfb1b-ce6a-4047-8ace-2ed3ceab0e0f",
                             Email = "admin@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAIAAYagAAAAEIXDWqHblcSJK4JFJ3SBpJMOQQSw1bOZfMhHTgna7EN5I1MHDHEFexHTIgRBlMPm/Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAENwH6htefC2l7MjaUnfllbOWwSD715lApgBgJoqwhF9FR+JvcdTOZIWYjUfWJCxIgQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "c65dc7e4-5662-417b-911c-b3b95b944de0",
+                            SecurityStamp = "9fec6536-9d44-431c-b71c-395c348ecbca",
                             TwoFactorEnabled = false,
                             UserName = "Admin",
-                            CreatedAt = new DateTime(2024, 12, 31, 2, 4, 38, 452, DateTimeKind.Utc).AddTicks(5809)
+                            CreatedAt = new DateTime(2025, 1, 3, 13, 15, 27, 21, DateTimeKind.Utc).AddTicks(8358)
                         });
                 });
 
-            modelBuilder.Entity("EcommerceProject.Model.Cart", b =>
+            modelBuilder.Entity("EcommerceProject.Model.Order", b =>
                 {
-                    b.HasOne("EcommerceProject.Model.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("EcommerceProject.Model.UserAccount", "User")
-                        .WithMany("Carts")
+                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Product");
-
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("EcommerceProject.Model.OrderDetail", b =>
+                {
+                    b.HasOne("EcommerceProject.Model.Order", "Order")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EcommerceProject.Model.Product", "Product")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("EcommerceProject.Model.Product", b =>
@@ -552,10 +585,18 @@ namespace EcommerceProject.Data.Migrations
                     b.Navigation("Products");
                 });
 
+            modelBuilder.Entity("EcommerceProject.Model.Order", b =>
+                {
+                    b.Navigation("OrderDetails");
+                });
+
+            modelBuilder.Entity("EcommerceProject.Model.Product", b =>
+                {
+                    b.Navigation("OrderDetails");
+                });
+
             modelBuilder.Entity("EcommerceProject.Model.UserAccount", b =>
                 {
-                    b.Navigation("Carts");
-
                     b.Navigation("Wishlists");
                 });
 #pragma warning restore 612, 618

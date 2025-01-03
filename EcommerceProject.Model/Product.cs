@@ -14,6 +14,7 @@ public class Product
     public DateTime CreatedDate { get; set; }
     public DateTime ModifiedDate { get; set; }
     public Guid CategoryId { get; set; }
+    
 
     public Product()
     {
@@ -22,4 +23,5 @@ public class Product
     }
     
     public Category Category { get; set; } //required
+    public ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
 }
